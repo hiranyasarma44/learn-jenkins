@@ -1,9 +1,11 @@
-import http from 'http'
+import express from "express";
 
-const server = http.createServer((req, res) => {
-    res.end('ok')
-})
+const app = express();
 
-server.listen(8080,()=>{
-    console.log('http://localhost:8080/');
-})
+app.get("/", function (req, res) {
+  res.send("hello world");
+});
+
+app.listen(process.env.PORT || 3000);
+
+export default app
