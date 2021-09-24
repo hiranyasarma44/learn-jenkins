@@ -1,0 +1,16 @@
+{
+  "name": "jenkins",
+  "version": "1.0.0",
+  "description": "learning jenkins",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon index.js"
+  },
+  "author": "Hiranya Sarma",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
